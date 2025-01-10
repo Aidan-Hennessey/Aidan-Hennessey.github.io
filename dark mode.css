@@ -1,0 +1,16 @@
+html{
+background-color:darkslategray;
+color: lightyellow;
+}
+
+.navstyle {
+background-color:rgb(62, 45, 13);
+}
+
+.navitem:hover {
+color: yellow;
+}
+
+a {
+color: hotpink;
+}

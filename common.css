@@ -1,0 +1,21 @@
+html{
+font-size: 14pt;
+}
+
+body{
+margin:0 auto;
+}
+
+.navstyle {
+font-weight: bold;
+padding: 8px;
+display: flex; 
+justify-content: center;
+}
+
+.navitem{
+padding-left: 50px;
+padding-right: 50px;
+list-style-type: none;
+float: left;
+}

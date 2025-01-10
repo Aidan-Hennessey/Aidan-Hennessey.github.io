@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		html{
-		background-color:rgb(192, 255, 215);
-		font-size: 14pt;
-		}
-		
-		body{
-		margin:0 auto;
-		background-color: rgb(192, 255, 215)
-		}
-
-		.navstyle {
-		font-weight: bold;
-		background-color:rgb(255,  255, 127);
-		padding: 8px;
-		}
-
-		.navitem{
-		width: 150px;
-		}
-	</style>
 	<head>
 		<meta charset="UTC-8">
 		<meta name="description" content="Aidan Hennessey's professional website">
 		<meta name="author" content="Aidan Hennessey">
 		<title>Aidan Hennessey</title>
+
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="light mode.css">
+		<link rel="stylesheet" href="dark mode.css">
+
+		
 	</head>
 	<body style="width:800px;">
 		<header align="center">
 			<h1>Aidan Hennessey</h1>
-			<div class="navstyle">
-					<table align="center">
-						<tr>
-							<td class="navitem">
-								<a href="index.html">Home</a>
-							</td>
-							<td class="navitem">
-								<a href="CV.pdf">CV</a>
-							</td>
-							<td class="navitem">
-								<a href="writing.html">Writing</a>
-							</td>
-						</tr>
-					</table>
-				</nav>
-			</div>
+			<nav>
+				<ul class="navstyle">
+					<li class="navitem" id="darkmode" onclick="toggleStyle()">
+						loading</li>
+					</li>
+					<li class="navitem" onclick="document.location='index.html'">
+						Home</li>
+					</li>
+					<li class="navitem" onclick="document.location='CV.pdf'">
+						CV</li>
+					</li>
+					<li class="navitem">
+						Writing</li>
+					</li>
+				</ul>
+			</nav>
 			<hr/>
 		</header>
+
+		<script src="change colors.js"></script>
+		<script> initializeColorMode(); </script>
+
 		<main>
 			<div style="width: 700px; margin:0 auto;">
 				<h2>Research</h2>
 				<ol reversed>
-					<li>Galois things</li>
-					<li>Many twist bands</li>
-					<li>Nim</li>
+					<li><i>Computing Mod-5 Galois Images of Torsion on Abelian Surfaces</i>, 
+						joint with Mathilde Kermorgant and Andy Zhu. In preparation. 
+						To submit to LuCaNT 2025. ArXiv paper to be released by end of January. </li>
+					<li><i>Constructing many-twist Mobius bands with small aspect ratios</i>. 
+						<a href="https://comptes-rendus.academie-sciences.fr/mathematique/item/10.5802/crmath.690.pdf">Comptes Rendus</a>, 2024.
+						(<a href="https://arxiv.org/abs/2401.14639">arXiv</a>)</li>
+					<li><i>Tree and Tripod Nim</i>.
+						(<a href="https://arxiv.org/abs/2401.07943">arXiv</a>)</li>
 				</ol>
 				<h2>Notes/Exposition</h2>
 				<ul>
-					<li>Talk notes</li>
-					<li>Sums of squares</li>
+					<li><a href="Galois Reps Speaker Notes.pdf">Notes</a> from my talk 'Galois representations from torsion on Abelian surfaces',
+						given at Brown's undergraduate math colloquium, October 2024.
+					</li>
+					<li><a href="Sums of squares.pdf">Sums of squares</a></li>
 				</ul>
 			</div>
 		</main>
