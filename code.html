@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTC-8">
+		<meta name="description" content="Aidan Hennessey's professional website">
+		<meta name="author" content="Aidan Hennessey">
+		<title>Aidan Hennessey</title>
+
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="light mode.css">
+		<link rel="stylesheet" href="dark mode.css">
+	</head>
+	<body style="width:800px;">
+		<header align="center">
+			<h1>Aidan Hennessey</h1>
+			<nav>
+				<ul class="navstyle">
+					<li class="navitem" id="darkmode" onclick="toggleStyle()">
+						loading</li>
+					</li>
+					<li class="navitem" onclick="document.location='index.html'">
+						Home</li>
+					</li>
+					<li class="navitem" onclick="document.location='CV.pdf'">
+						CV</li>
+					</li>
+					<li class="navitem" onclick="document.location='writing.html'">
+						Writing</li>
+					</li>
+                    <li class="navitem">
+						Code</li>
+					</li>
+				</ul>
+			</nav>
+			<hr/>
+		</header>
+
+		<script src="change colors.js"></script>
+		<script> initializeColorMode(); </script>
+
+		<main>
+			<div style="width: 700px; margin:0 auto;">
+				<h2>Code</h2>
+				<ul>
+                    <li><a href="https://github.com/maathilde-k/Mod-5-Galois-Images-of-Genus-2-Abelian-Curves">Code</a> to compute image of mod-5 Galois representations for Jacobians of genus 2 curves. This code corresponds to my paper with Mathilde Kermorgant and Andy Zhu, to be published to arXiv soon.</li>
+					<li>Fun Run Mapper, an algorithm to approximate user-drawn pictures on street maps. (<a href="https://github.com/Aidan-Hennessey/Fun-Run-Mapper">code</a>) </li>
+					<li>Ascii implementation of the combinatorial game Amazons in C++, including strong AI to play against. (<a href="https://github.com/Aidan-Hennessey/amazons">code/download</a>)</li>
+                </ul>
+			</div>
+		</main>
+	</body>
+</html>
