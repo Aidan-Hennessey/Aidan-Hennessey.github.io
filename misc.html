@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTC-8">
+		<meta name="description" content="Aidan Hennessey's professional website">
+		<meta name="author" content="Aidan Hennessey">
+		<title>Aidan Hennessey</title>
+
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="light mode.css">
+		<link rel="stylesheet" href="dark mode.css">
+	</head>
+	<body style="width:800px;">
+		<header align="center">
+			<h1>Aidan Hennessey</h1>
+			<nav>
+				<ul class="navstyle">
+					<li class="navitem" id="darkmode" onclick="toggleStyle()">
+						loading</li>
+					</li>
+					<li class="navitem" onclick="document.location='index.html'">
+						Home</li>
+					</li>
+					<li class="navitem" onclick="document.location='CV.pdf'">
+						CV</li>
+					</li>
+					<li class="navitem" onclick="document.location='writing.html'">
+						Writing</li>
+					</li>
+					<li class="navitem" onclick="document.location='code.html'">
+						Code</li>
+					</li>
+					<li class="navitem">
+						Misc</li>
+					</li>
+				</ul>
+			</nav>
+			<hr/>
+		</header>
+
+		<script src="change colors.js"></script>
+		<script> initializeColorMode(); </script>
+
+		<main>
+			<div style="width: 700px; margin:0 auto;">
+                <h2>Computing for genus 2 curves over number fields</h2>
+                <p>
+                    <a href="https://mokkapalat.cafe/" target="_blank" rel="noopener noreferrer"> Hugo Nartz</a> is working towards building databases of genus 2 curves over number fields. As parts of such databases, we will want to compute invariants of genus 2 curves over number fields. <a href="https://docs.google.com/spreadsheets/d/1hklbaNX_5vfry_yfEQQD7AsIyxYw3SzT3myEDKYAh1w/" target="_blank" rel="noopener noreferrer">This spreadsheet</a> details what has been implmented and where, as well as what we might want but don't yet have. This spreadsheet is a community resource; if you have things to add it to, whether it be links, notes, difficulty ratings, or additional invariants, please, please go ahead and add them.
+                </p>
+			</div>
+            <hr/>
+            <div style="width: 700px; margin:0 auto;">
+                <h2>Nim arrays and a <i>cash prize</i></h2>
+                <p>
+                    Construct an infinite 2D array of integers as follows. Fill in the first row and first column with the same finitely supported permutation of the non-negative integers. Fill in every other entry in the array with the <i>minimal excluded value</i> among all entries directly above or directly to the left of the entry. 
+                </p>
+                <img src="nim-array example.png" height="150"/>
+                <img src="center3.png" height="150"/>
+                <img src="center4.png" height="150"/>
+                <p>
+                    When the permutation is trivial, one obtains a nim-sum addition table (bitwise XOR). When the permutation is a transposition swapping 0 and a number one less than a power of 2, the table differs from a nim-sum addition table in finitely many entries; this is what is shown in the middle image. For general finite permutation (such as the right image), it is conjectured that the resulting array admits a 2-power-scaling limit, but this is open; see [<a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v17i1r103">AC10</a>]. I am offering a $500 prize for anyone publishes a paper resolving this conjecture.
+                </p>
+			</div>
+            <hr/>
+		</main>
+	</body>
+</html>
