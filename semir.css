@@ -1,0 +1,61 @@
+/* Shared styles for all pages */
+body {
+  font-family: Optima, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #2a2a2a;
+  background-color: #bfd7dc;
+}
+
+h1, h2 {
+  font-family: Optima, sans-serif;
+  font-weight: normal;
+}
+
+nav {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #444;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text-next-to-image layout (home and papers pages) */
+.row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.row .text {
+  flex: 1;
+}
+
+.row .image {
+  flex: 0 0 300px;
+}
+
+/* Stack vertically on narrow screens */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .image {
+    flex: 1;
+  }
+}
